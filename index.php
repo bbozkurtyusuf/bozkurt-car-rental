@@ -60,15 +60,15 @@ error_reporting(0);
     </div>
   </div>
 </section>
-<!-- / --> 
+<!-- /Banners --> 
 
 
 <!-- Resent Cat-->
 <section class="section-padding gray-bg">
   <div class="container">
     <div class="section-header text-center">
-      <h2>En iyisini bul <span>Carforyou</span></h2>
-      <p>Ldfsghjfşjaz inandırıcı görünmeyen randomize kelimelerle bir değişiklik geçirdi.Lorem Ipsum'un bir geçişi kullanacaksanız, metnin ortasında utanç verici bir şey olmadığından emin olmanız gerekir.</p>
+      <h2>Find the Best <span>CarForYou</span></h2>
+      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
     </div>
     <div class="row"> 
       
