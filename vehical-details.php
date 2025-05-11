@@ -55,7 +55,7 @@ echo "<script>alert('Something went wrong. Please try again');</script>";
 <html lang="en">
 <head>
 
-<title>Car Rental | Vehicle Details</title>
+<title> Araç Kiralama | Araç Detayları</title>
 <!--Bootstrap -->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
 <!--Custome Style -->
@@ -137,7 +137,7 @@ $_SESSION['brndid']=$result->bid;
       </div>
       <div class="col-md-3">
         <div class="price_info">
-          <p>$<?php echo htmlentities($result->PricePerDay);?> </p>Per Day
+          <p>$<?php echo htmlentities($result->PricePerDay);?> </p>Günlük
          
         </div>
       </div>
@@ -149,16 +149,16 @@ $_SESSION['brndid']=$result->bid;
           
             <li> <i class="fa fa-calendar" aria-hidden="true"></i>
               <h5><?php echo htmlentities($result->ModelYear);?></h5>
-              <p>Reg.Year</p>
+              <p> Tescil Yılı</p>
             </li>
             <li> <i class="fa fa-cogs" aria-hidden="true"></i>
               <h5><?php echo htmlentities($result->FuelType);?></h5>
-              <p>Fuel Type</p>
+              <p>Yakıt Türü</p>
             </li>
        
             <li> <i class="fa fa-user-plus" aria-hidden="true"></i>
               <h5><?php echo htmlentities($result->SeatingCapacity);?></h5>
-              <p>Seats</p>
+              <p>Koltuk Sayısı</p>
             </li>
           </ul>
         </div>
@@ -166,9 +166,9 @@ $_SESSION['brndid']=$result->bid;
           <div class="listing_detail_wrap"> 
             <!-- Nav tabs -->
             <ul class="nav nav-tabs gray-bg" role="tablist">
-              <li role="presentation" class="active"><a href="#vehicle-overview " aria-controls="vehicle-overview" role="tab" data-toggle="tab">Vehicle Overview </a></li>
+              <li role="presentation" class="active"><a href="#vehicle-overview " aria-controls="vehicle-overview" role="tab" data-toggle="tab"> Araç Genel Bakış </a></li>
           
-              <li role="presentation"><a href="#accessories" aria-controls="accessories" role="tab" data-toggle="tab">Accessories</a></li>
+              <li role="presentation"><a href="#accessories" aria-controls="accessories" role="tab" data-toggle="tab">Aksesuarlar</a></li>
             </ul>
             
             <!-- Tab panes -->
@@ -186,12 +186,12 @@ $_SESSION['brndid']=$result->bid;
                 <table>
                   <thead>
                     <tr>
-                      <th colspan="2">Accessories</th>
+                      <th colspan="2">Aksesuarlar</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Air Conditioner</td>
+                      <td>Klima</td>
 <?php if($result->AirConditioner==1)
 {
 ?>
@@ -201,7 +201,7 @@ $_SESSION['brndid']=$result->bid;
    <?php } ?> </tr>
 
 <tr>
-<td>AntiLock Braking System</td>
+<td>Kilitleme Karşıtı Fren Sistemi (ABS)</td>
 <?php if($result->AntiLockBrakingSystem==1)
 {
 ?>
@@ -212,7 +212,7 @@ $_SESSION['brndid']=$result->bid;
                     </tr>
 
 <tr>
-<td>Power Steering</td>
+<td>Hidrolik Direksiyon</td>
 <?php if($result->PowerSteering==1)
 {
 ?>
@@ -225,7 +225,7 @@ $_SESSION['brndid']=$result->bid;
 
 <tr>
 
-<td>Power Windows</td>
+<td>Elektrikli Camlar</td>
 
 <?php if($result->PowerWindows==1)
 {
@@ -237,7 +237,7 @@ $_SESSION['brndid']=$result->bid;
 </tr>
                    
  <tr>
-<td>CD Player</td>
+<td>Bluetooth Sistemi (Apple Car Play)</td>
 <?php if($result->CDPlayer==1)
 {
 ?>
@@ -248,7 +248,7 @@ $_SESSION['brndid']=$result->bid;
 </tr>
 
 <tr>
-<td>Leather Seats</td>
+<td>Deri Koltuklar</td>
 <?php if($result->LeatherSeats==1)
 {
 ?>
@@ -259,7 +259,7 @@ $_SESSION['brndid']=$result->bid;
 </tr>
 
 <tr>
-<td>Central Locking</td>
+<td>Merkezi Kilitleme</td>
 <?php if($result->CentralLocking==1)
 {
 ?>
@@ -270,7 +270,7 @@ $_SESSION['brndid']=$result->bid;
 </tr>
 
 <tr>
-<td>Power Door Locks</td>
+<td> Elektrikli Kapı Kilitleri</td>
 <?php if($result->PowerDoorLocks==1)
 {
 ?>
@@ -280,7 +280,7 @@ $_SESSION['brndid']=$result->bid;
 <?php } ?>
                     </tr>
                     <tr>
-<td>Brake Assist</td>
+<td> Aktif Fren Destek Sistemi</td>
 <?php if($result->BrakeAssist==1)
 {
 ?>
@@ -291,7 +291,7 @@ $_SESSION['brndid']=$result->bid;
 </tr>
 
 <tr>
-<td>Driver Airbag</td>
+<td>Sürücü Hava Yastığı</td>
 <?php if($result->DriverAirbag==1)
 {
 ?>
@@ -302,7 +302,7 @@ $_SESSION['brndid']=$result->bid;
  </tr>
  
  <tr>
- <td>Passenger Airbag</td>
+ <td> Yolcu Hava Yastığı</td>
  <?php if($result->PassengerAirbag==1)
 {
 ?>
@@ -313,7 +313,7 @@ $_SESSION['brndid']=$result->bid;
 </tr>
 
 <tr>
-<td>Crash Sensor</td>
+<td> Çarpışma Sensörü</td>
 <?php if($result->CrashSensor==1)
 {
 ?>
@@ -338,19 +338,19 @@ $_SESSION['brndid']=$result->bid;
       <aside class="col-md-3">
       
         <div class="share_vehicle">
-          <p>Share: <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a> </p>
+          <p>Paylaş: <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a> </p>
         </div>
         <div class="sidebar_widget">
           <div class="widget_heading">
-            <h5><i class="fa fa-envelope" aria-hidden="true"></i>Book Now</h5>
+            <h5><i class="fa fa-envelope" aria-hidden="true"></i>Şimdi Rezervasyon Yap</h5>
           </div>
           <form method="post">
             <div class="form-group">
-              <label>From Date:</label>
+              <label>Başlangıç Tarihi:</label>
               <input type="date" class="form-control" name="fromdate" placeholder="From Date" required>
             </div>
             <div class="form-group">
-              <label>To Date:</label>
+              <label>Bitiş Tarihi:</label>
               <input type="date" class="form-control" name="todate" placeholder="To Date" required>
             </div>
             <div class="form-group">
@@ -362,7 +362,7 @@ $_SESSION['brndid']=$result->bid;
                 <input type="submit" class="btn"  name="submit" value="Book Now">
               </div>
               <?php } else { ?>
-<a href="#loginform" class="btn btn-xs uppercase" data-toggle="modal" data-dismiss="modal">Login For Book</a>
+<a href="#loginform" class="btn btn-xs uppercase" data-toggle="modal" data-dismiss="modal">Rezervasyon İçin Giriş Yap</a>
 
               <?php } ?>
           </form>
@@ -376,7 +376,7 @@ $_SESSION['brndid']=$result->bid;
     
     <!--Similar-Cars-->
     <div class="similar_cars">
-      <h3>Similar Cars</h3>
+      <h3> Benzer Araçlar</h3>
       <div class="row">
 <?php 
 $bid=$_SESSION['brndid'];
@@ -396,12 +396,12 @@ foreach($results as $result)
             </div>
             <div class="product-listing-content">
               <h5><a href="vehical-details.php?vhid=<?php echo htmlentities($result->id);?>"><?php echo htmlentities($result->BrandName);?> , <?php echo htmlentities($result->VehiclesTitle);?></a></h5>
-              <p class="list-price">$<?php echo htmlentities($result->PricePerDay);?></p>
+              <p class="list-price">$<?php echo htmlentities($result->PricePerDay);?> Günlük</p>
           
               <ul class="features_list">
                 
-             <li><i class="fa fa-user" aria-hidden="true"></i><?php echo htmlentities($result->SeatingCapacity);?> seats</li>
-                <li><i class="fa fa-calendar" aria-hidden="true"></i><?php echo htmlentities($result->ModelYear);?> model</li>
+             <li><i class="fa fa-user" aria-hidden="true"></i><?php echo htmlentities($result->SeatingCapacity);?> Koltuk Sayısı</li>
+                <li><i class="fa fa-calendar" aria-hidden="true"></i><?php echo htmlentities($result->ModelYear);?> Model</li>
                 <li><i class="fa fa-car" aria-hidden="true"></i><?php echo htmlentities($result->FuelType);?></li>
               </ul>
             </div>
