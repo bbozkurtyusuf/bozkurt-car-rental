@@ -12,7 +12,7 @@ error_reporting(0);
 <html lang="en">
 <head>
 
-<title>Car Rental Portal</title>
+<title>Araç Kiralama Portalı</title>
 <!--Bootstrap -->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
 <link rel="stylesheet" href="assets/css/style.css" type="text/css">
@@ -67,15 +67,15 @@ error_reporting(0);
 <section class="section-padding gray-bg">
   <div class="container">
     <div class="section-header text-center">
-      <h2>En iyisini bul <span>CarForYou</span></h2>
-      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+      <h2>En iyisini bul <span>Senin İçin</span></h2>
+      <p>"En kaliteli araçlarla, ihtiyacınıza uygun kiralama seçenekleriyle hizmetinizdeyiz. Geniş araç filomuz, her bütçeye ve ihtiyaca uygun seçenekler sunar. Sizin için en uygun aracı bulmak çok kolay! Güvenli, konforlu ve ekonomik araçlarımıza hemen göz atın ve yolculuğunuzun keyfini çıkarın."</p>
     </div>
     <div class="row"> 
       
       <!-- Nav tabs -->
       <div class="recent-tab">
         <ul class="nav nav-tabs" role="tablist">
-          <li role="presentation" class="active"><a href="#resentnewcar" role="tab" data-toggle="tab">New Car</a></li>
+          <li role="presentation" class="active"><a href="#resentnewcar" role="tab" data-toggle="tab">Yeni Araç</a></li>
         </ul>
       </div>
       <!-- Recently Listed New Cars -->
@@ -99,7 +99,7 @@ foreach($results as $result)
 <ul>
 <li><i class="fa fa-car" aria-hidden="true"></i><?php echo htmlentities($result->FuelType);?></li>
 <li><i class="fa fa-calendar" aria-hidden="true"></i><?php echo htmlentities($result->ModelYear);?> Model</li>
-<li><i class="fa fa-user" aria-hidden="true"></i><?php echo htmlentities($result->SeatingCapacity);?> seats</li>
+<li><i class="fa fa-user" aria-hidden="true"></i><?php echo htmlentities($result->SeatingCapacity);?> Koltuk Sayısı</li>
 </ul>
 </div>
 <div class="car-title-m">
@@ -127,7 +127,7 @@ foreach($results as $result)
         <div class="fun-facts-m">
           <div class="cell">
             <h2><i class="fa fa-calendar" aria-hidden="true"></i>40+</h2>
-            <p>Years In Business</p>
+            <p>İşletme Yılı</p>
           </div>
         </div>
       </div>
@@ -135,7 +135,7 @@ foreach($results as $result)
         <div class="fun-facts-m">
           <div class="cell">
             <h2><i class="fa fa-car" aria-hidden="true"></i>1200+</h2>
-            <p>New Cars For Sale</p>
+            <p> Satılık Yeni Araçlar</p>
           </div>
         </div>
       </div>
@@ -143,7 +143,7 @@ foreach($results as $result)
         <div class="fun-facts-m">
           <div class="cell">
             <h2><i class="fa fa-car" aria-hidden="true"></i>1000+</h2>
-            <p>Used Cars For Sale</p>
+            <p> Satılık 2. El Araçlar</p>
           </div>
         </div>
       </div>
@@ -151,7 +151,7 @@ foreach($results as $result)
         <div class="fun-facts-m">
           <div class="cell">
             <h2><i class="fa fa-user-circle-o" aria-hidden="true"></i>600+</h2>
-            <p>Satisfied Customers</p>
+            <p>Müşteri Memnuniyeti</p>
           </div>
         </div>
       </div>
@@ -167,7 +167,7 @@ foreach($results as $result)
 <section class="section-padding testimonial-section parallex-bg">
   <div class="container div_zindex">
     <div class="section-header white-text text-center">
-      <h2>Our Satisfied <span>Customers</span></h2>
+      <h2>Memnun Müşterilerimiz<span>Müşterilerimiz</span></h2>
     </div>
     <div class="row">
       <div id="testimonial-slider">
