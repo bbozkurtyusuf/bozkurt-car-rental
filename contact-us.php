@@ -124,7 +124,7 @@ $error="Something went wrong. Please try again";
               <input type="text" name="fullname" class="form-control white_bg" id="fullname" required>
             </div>
             <div class="form-group">
-              <label class="control-label">E-mail Adres <span>*</span></label>
+              <label class="control-label">E-mail Adresi <span>*</span></label>
               <input type="email" name="email" class="form-control white_bg" id="emailaddress" required>
             </div>
             <div class="form-group">
