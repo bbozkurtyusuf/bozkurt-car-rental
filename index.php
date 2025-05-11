@@ -60,7 +60,7 @@ error_reporting(0);
     </div>
   </div>
 </section>
-<!-- /Banners --> 
+<!-- / --> 
 
 
 <!-- Resent Cat-->
