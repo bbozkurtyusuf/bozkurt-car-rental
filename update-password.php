@@ -38,7 +38,7 @@ $error="Your current password is wrong";
 <html lang="en">
 <head>
 
-<title>Car Rental Portal - Update Password</title>
+<title>Araç Kiralama Portalı - Şifreyi Güncelle</title>
 <!--Bootstrap -->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
 <!--Custome Style -->
@@ -115,11 +115,11 @@ return true;
   <div class="container">
     <div class="page-header_wrap">
       <div class="page-heading">
-        <h1>Update Password</h1>
+        <h1>Şifreyi Güncelle</h1>
       </div>
       <ul class="coustom-breadcrumb">
-        <li><a href="#">Home</a></li>
-        <li>Update Password</li>
+        <li><a href="#">Anasayfa</a></li>
+        <li>Şifreyi Güncelle</li>
       </ul>
     </div>
   </div>
@@ -160,21 +160,21 @@ foreach($results as $result)
 <form name="chngpwd" method="post" onSubmit="return valid();">
         
             <div class="gray-bg field-title">
-              <h6>Update password</h6>
+              <h6>Şifreyi Güncelle</h6>
             </div>
              <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
         else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
             <div class="form-group">
-              <label class="control-label">Current Password</label>
+              <label class="control-label">Mevcut Şifre</label>
               <input class="form-control white_bg" id="password" name="password"  type="password" required>
             </div>
             <div cl
             <div class="form-group">
-              <label class="control-label">Password</label>
+              <label class="control-label">Şifre</label>
               <input class="form-control white_bg" id="newpassword" type="password" name="newpassword" required>
             </div>
             <div class="form-group">
-              <label class="control-label">Confirm Password</label>
+              <label class="control-label">Şifreyi Onayla</label>
               <input class="form-control white_bg" id="confirmpassword" type="password" name="confirmpassword"  required>
             </div>
           
