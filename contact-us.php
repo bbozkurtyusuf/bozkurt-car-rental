@@ -31,7 +31,7 @@ $error="Something went wrong. Please try again";
 <html lang="en">
 <head>
 
-<title>Car Rental|| Contact Us Page</title>
+<title>Araç Kiralama/Bize Ulaşın</title>
 <!--Bootstrap -->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
 <!--Custome Style -->
@@ -96,11 +96,11 @@ $error="Something went wrong. Please try again";
   <div class="container">
     <div class="page-header_wrap">
       <div class="page-heading">
-        <h1>Contact Us</h1>
+        <h1> Bize Ulaşın</h1>
       </div>
       <ul class="coustom-breadcrumb">
-        <li><a href="#">Home</a></li>
-        <li>Contact Us</li>
+        <li><a href="#">Anasayfa</a></li>
+        <li>Bize Ulaşın</li>
       </ul>
     </div>
   </div>
@@ -114,35 +114,35 @@ $error="Something went wrong. Please try again";
   <div class="container">
     <div  class="row">
       <div class="col-md-6">
-        <h3>Get in touch using the form below</h3>
+        <h3> Aşağıdaki formu kullanarak bizimle iletişime geçin</h3>
           <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
         else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
         <div class="contact_form gray-bg">
           <form  method="post">
             <div class="form-group">
-              <label class="control-label">Full Name <span>*</span></label>
+              <label class="control-label">Tam Ad<span>*</span></label>
               <input type="text" name="fullname" class="form-control white_bg" id="fullname" required>
             </div>
             <div class="form-group">
-              <label class="control-label">Email Address <span>*</span></label>
+              <label class="control-label">E-mail Adres <span>*</span></label>
               <input type="email" name="email" class="form-control white_bg" id="emailaddress" required>
             </div>
             <div class="form-group">
-              <label class="control-label">Phone Number <span>*</span></label>
+              <label class="control-label">Telefon Numarası <span>*</span></label>
               <input type="text" name="contactno" class="form-control white_bg" id="phonenumber" required maxlength="10" pattern="[0-9]+">
             </div>
             <div class="form-group">
-              <label class="control-label">Message <span>*</span></label>
+              <label class="control-label">Mesaj <span>*</span></label>
               <textarea class="form-control white_bg" name="message" rows="4" required></textarea>
             </div>
             <div class="form-group">
-              <button class="btn" type="submit" name="send" type="submit">Send Message <span class="angle_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span></button>
+              <button class="btn" type="submit" name="send" type="submit">Mesaj Gönder <span class="angle_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span></button>
             </div>
           </form>
         </div>
       </div>
       <div class="col-md-6">
-        <h3>Contact Info</h3>
+        <h3> İletişim Bilgileri</h3>
         <div class="contact_detail">
               <?php 
 $pagetype=$_GET['type'];

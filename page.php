@@ -8,7 +8,7 @@ include('includes/config.php');
 <html lang="en">
 <head>
 
-<title>Car Rental Portal | Page details</title>
+<title>Araç Kiralama Portalı | Sayfa Detayları</title>
 <!--Bootstrap -->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
 <!--Custome Style -->
@@ -66,7 +66,7 @@ foreach($results as $result)
         <h1><?php   echo htmlentities($result->PageName); ?></h1>
       </div>
       <ul class="coustom-breadcrumb">
-        <li><a href="#">Home</a></li>
+        <li><a href="#">Anasayfa</a></li>
         <li><?php   echo htmlentities($result->PageName); ?></li>
       </ul>
     </div>
