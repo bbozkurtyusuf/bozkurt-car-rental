@@ -68,7 +68,7 @@ error_reporting(0);
   <div class="container">
     <div class="section-header text-center">
       <h2>En iyisini bul <span>Carforyou</span></h2>
-      <p>Lorem Ipsum'un birçok pasajı var, ancak çoğunluk bir şekilde, enjekte mizah veya biraz inandırıcı görünmeyen randomize kelimelerle bir değişiklik geçirdi.Lorem Ipsum'un bir geçişi kullanacaksanız, metnin ortasında utanç verici bir şey olmadığından emin olmanız gerekir.</p>
+      <p>Ldfsghjfşjaz inandırıcı görünmeyen randomize kelimelerle bir değişiklik geçirdi.Lorem Ipsum'un bir geçişi kullanacaksanız, metnin ortasında utanç verici bir şey olmadığından emin olmanız gerekir.</p>
     </div>
     <div class="row"> 
       
