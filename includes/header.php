@@ -24,12 +24,12 @@
             ?>
             <div class="header_widgets">
               <div class="circle_icon"> <i class="fa fa-envelope" aria-hidden="true"></i> </div>
-              <p class="uppercase_text">For Support Mail us : </p>
+              <p class="uppercase_text">Destek için Bize Mail Gönderin : </p>
               <a href="mailto:<?php echo htmlentities($email); ?>"><?php echo htmlentities($email); ?></a>
             </div>
             <div class="header_widgets">
               <div class="circle_icon"> <i class="fa fa-phone" aria-hidden="true"></i> </div>
-              <p class="uppercase_text">Service Helpline Call Us: </p>
+              <p class="uppercase_text">Destek Bizi Arayın: </p>
               <a href="tel:<?php echo htmlentities($contactno); ?>"><?php echo htmlentities($contactno); ?></a>
             </div>
             <div class="social-follow">
@@ -38,7 +38,7 @@
             <?php if (strlen($_SESSION['login']) == 0) {
               ?>
               <div class="login_btn"> <a href="#loginform" class="btn btn-xs uppercase" data-toggle="modal"
-                  data-dismiss="modal">Login / Register</a> </div>
+                  data-dismiss="modal">Giriş Yap / Kayıt Ol</a> </div>
             <?php } else {
 
               echo "Welcome To Car rental portal";
@@ -78,12 +78,12 @@
                 <i class="fa fa-angle-down" aria-hidden="true"></i></a>
               <ul class="dropdown-menu">
                 <?php if ($_SESSION['login']) { ?>
-                  <li><a href="profile.php">Profile Settings</a></li>
-                  <li><a href="update-password.php">Update Password</a></li>
-                  <li><a href="my-booking.php">My Booking</a></li>
-                  <li><a href="post-testimonial.php">Post a Testimonial</a></li>
-                  <li><a href="my-testimonials.php">My Testimonial</a></li>
-                  <li><a href="logout.php">Sign Out</a></li>
+                  <li><a href="profile.php">Profil Ayarları</a></li>
+                  <li><a href="update-password.php">Şifre Güncelle</a></li>
+                  <li><a href="my-booking.php">Rezervasyonlarım</a></li>
+                  <li><a href="post-testimonial.php">Görüşlerinizi Önemsiyoruz</a></li>
+                  <li><a href="my-testimonials.php">Görüş Bildirimim</a></li>
+                  <li><a href="logout.php">Çıkış Yap</a></li>
                 <?php } ?>
               </ul>
             </li>
@@ -99,12 +99,12 @@
       </div>
       <div class="collapse navbar-collapse" id="navigation">
         <ul class="nav navbar-nav">
-          <li><a href="index.php">Home</a> </li>
+          <li><a href="index.php">Anasayfa</a> </li>
 
-          <li><a href="page.php?type=aboutus">About Us</a></li>
-          <li><a href="car-listing.php">Car Listing</a>
-          <li><a href="page.php?type=faqs">FAQs</a></li>
-          <li><a href="contact-us.php">Contact Us</a></li>
+          <li><a href="page.php?type=aboutus">Hakkımızda</a></li>
+          <li><a href="car-listing.php">Araç Lİstesi</a>
+          <li><a href="page.php?type=faqs">Sıkça Sorulan Sorular (SSS)</a></li>
+          <li><a href="contact-us.php">Bize Ulaşın</a></li>
 
         </ul>
       </div>
