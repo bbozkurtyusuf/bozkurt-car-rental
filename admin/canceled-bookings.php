@@ -21,7 +21,7 @@ else{
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Car Rental Portal | Canceled Bookings   </title>
+	<title>Araç Kiralama Portalı | İptal Edilen Rezervasyonlar</title>
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -71,38 +71,38 @@ else{
 				<div class="row">
 					<div class="col-md-12">
 
-						<h2 class="page-title">Canceled Bookings</h2>
+						<h2 class="page-title">İptal Edilen Rezervasyonlar</h2>
 
 						<!-- Zero Configuration Table -->
 						<div class="panel panel-default">
-							<div class="panel-heading">Bookings Info</div>
+							<div class="panel-heading">Rezervasyon Bilgileri</div>
 							<div class="panel-body">
 
 								<table id="zctb" class="display table table-striped table-bordered table-hover" cellspacing="0" width="100%">
 									<thead>
 										<tr>
 										<th>#</th>
-											<th>Name</th>
-											<th>Booking No.</th>
-											<th>Vehicle</th>
-											<th>From Date</th>
-											<th>To Date</th>
-											<th>Status</th>
-											<th>Posting date</th>
-											<th>Action</th>
+											<th>İsim</th>
+											<th>Rezervasyon Numarası.</th>
+											<th>Araç</th>
+											<th>Başlangıç Tarihi</th>
+											<th>Bitiş Tarihi</th>
+											<th>Durum</th>
+											<th>Paylaşım Tarihi</th>
+											<th>İşlem</th>
 										</tr>
 									</thead>
 									<tfoot>
 										<tr>
 										<th>#</th>
-										<th>Name</th>
-											<th>Booking No.</th>
-											<th>Vehicle</th>
-											<th>From Date</th>
-											<th>To Date</th>
-											<th>Status</th>
-											<th>Posting date</th>
-											<th>Action</th>
+										<th>İsim</th>
+											<th>Rezervasyon Numarası.</th>
+											<th>Araç</th>
+											<th>Başlangıç Tarihi</th>
+											<th>Bitiş Tarihi</th>
+											<th>Durum</th>
+											<th>Paylaşım Tarihi</th>
+											<th>İşlem</th>
 										</tr>
 									</tfoot>
 									<tbody>
@@ -142,7 +142,7 @@ echo htmlentities('Confirmed');
 										<td>
 
 
-<a href="bookig-details.php?bid=<?php echo htmlentities($result->id);?>"> View</a>
+<a href="bookig-details.php?bid=<?php echo htmlentities($result->id);?>"> Görüntüle</a>
 </td>
 
 										</tr>
