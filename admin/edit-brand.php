@@ -35,7 +35,7 @@ $msg="Brand Update successfully";
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Car Rental Portal | Admin Update Brand</title>
+	<title>Araç Kiralama Portalı | Yönetici Marka Güncelleme</title>
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -85,12 +85,12 @@ $msg="Brand Update successfully";
 				<div class="row">
 					<div class="col-md-12">
 					
-						<h2 class="page-title">Update Brand</h2>
+						<h2 class="page-title">Marka Güncelle</h2>
 
 						<div class="row">
 							<div class="col-md-10">
 								<div class="panel panel-default">
-									<div class="panel-heading">Update Brand</div>
+									<div class="panel-heading">Marka Güncelle</div>
 									<div class="panel-body">
 										<form method="post" name="chngpwd" class="form-horizontal" onSubmit="return valid();">
 										
@@ -113,7 +113,7 @@ foreach($results as $result)
 ?>
 
 											<div class="form-group">
-												<label class="col-sm-4 control-label">Brand Name</label>
+												<label class="col-sm-4 control-label">Marka Adı</label>
 												<div class="col-sm-8">
 													<input type="text" class="form-control" value="<?php echo htmlentities($result->BrandName);?>" name="brand" id="brand" required>
 												</div>
@@ -126,7 +126,7 @@ foreach($results as $result)
 											<div class="form-group">
 												<div class="col-sm-8 col-sm-offset-4">
 								
-													<button class="btn btn-primary" name="submit" type="submit">Submit</button>
+													<button class="btn btn-primary" name="submit" type="submit">Gönder</button>
 												</div>
 											</div>
 
