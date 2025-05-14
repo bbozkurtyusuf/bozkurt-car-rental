@@ -92,7 +92,7 @@ $error="Something went wrong. Please try again";
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Car Rental Portal | Admin Post Vehicle</title>
+	<title>Araba Kiralama Portalı | Admin Araç İlanı</title>
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -141,26 +141,26 @@ $error="Something went wrong. Please try again";
 				<div class="row">
 					<div class="col-md-12">
 					
-						<h2 class="page-title">Post A Vehicle</h2>
+						<h2 class="page-title">Araç İlanı Ver</h2>
 
 						<div class="row">
 							<div class="col-md-12">
 								<div class="panel panel-default">
-									<div class="panel-heading">Basic Info</div>
+									<div class="panel-heading">Temel Bilgiler</div>
 <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
 				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
 
 									<div class="panel-body">
 <form method="post" class="form-horizontal" enctype="multipart/form-data">
 <div class="form-group">
-<label class="col-sm-2 control-label">Vehicle Title<span style="color:red">*</span></label>
+<label class="col-sm-2 control-label">Araç Başlığı<span style="color:red">*</span></label>
 <div class="col-sm-4">
 <input type="text" name="vehicletitle" class="form-control" required>
 </div>
-<label class="col-sm-2 control-label">Select Brand<span style="color:red">*</span></label>
+<label class="col-sm-2 control-label">Marka Seçiniz<span style="color:red">*</span></label>
 <div class="col-sm-4">
 <select class="selectpicker" name="brandname" required>
-<option value=""> Select </option>
+<option value=""> Seçiniz </option>
 <?php $ret="select id,BrandName from tblbrands";
 $query= $dbh -> prepare($ret);
 //$query->bindParam(':id',$id, PDO::PARAM_STR);
@@ -180,36 +180,36 @@ foreach($results as $result)
 											
 <div class="hr-dashed"></div>
 <div class="form-group">
-<label class="col-sm-2 control-label">Vehical Overview<span style="color:red">*</span></label>
+<label class="col-sm-2 control-label">Araca Genel Bakış<span style="color:red">*</span></label>
 <div class="col-sm-10">
 <textarea class="form-control" name="vehicalorcview" rows="3" required></textarea>
 </div>
 </div>
 
 <div class="form-group">
-<label class="col-sm-2 control-label">Price Per Day(in USD)<span style="color:red">*</span></label>
+<label class="col-sm-2 control-label">Günlük Fiyat (USD cinsinden)<span style="color:red">*</span></label>
 <div class="col-sm-4">
 <input type="text" name="priceperday" class="form-control" required>
 </div>
-<label class="col-sm-2 control-label">Select Fuel Type<span style="color:red">*</span></label>
+<label class="col-sm-2 control-label">Yakıt Türünü Seçin<span style="color:red">*</span></label>
 <div class="col-sm-4">
 <select class="selectpicker" name="fueltype" required>
-<option value=""> Select </option>
+<option value=""> Seçiniz </option>
 
-<option value="Petrol">Petrol</option>
-<option value="Diesel">Diesel</option>
-<option value="CNG">CNG</option>
+<option value="Petrol">Benzin</option>
+<option value="Diesel">Dizel</option>
+<option value="CNG">Tüp</option>
 </select>
 </div>
 </div>
 
 
 <div class="form-group">
-<label class="col-sm-2 control-label">Model Year<span style="color:red">*</span></label>
+<label class="col-sm-2 control-label">Model Yılı<span style="color:red">*</span></label>
 <div class="col-sm-4">
 <input type="text" name="modelyear" class="form-control" required>
 </div>
-<label class="col-sm-2 control-label">Seating Capacity<span style="color:red">*</span></label>
+<label class="col-sm-2 control-label">Koltuk Kapasitesi <span style="color:red">*</span></label>
 <div class="col-sm-4">
 <input type="text" name="seatingcapacity" class="form-control" required>
 </div>
@@ -219,30 +219,29 @@ foreach($results as $result)
 
 <div class="form-group">
 <div class="col-sm-12">
-<h4><b>Upload Images</b></h4>
+<h4><b>Görsel Yükleyin</b></h4>
 </div>
 </div>
 
 
 <div class="form-group">
 <div class="col-sm-4">
-Image 1 <span style="color:red">*</span><input type="file" name="img1" required>
+Görsel 1 <span style="color:red">*</span><input type="file" name="img1" required>
 </div>
 <div class="col-sm-4">
-Image 2<span style="color:red">*</span><input type="file" name="img2" required>
+Görsel 2<span style="color:red">*</span><input type="file" name="img2" required>
 </div>
 <div class="col-sm-4">
-Image 3<span style="color:red">*</span><input type="file" name="img3" required>
+Görsel 3<span style="color:red">*</span><input type="file" name="img3" required>
 </div>
 </div>
 
 
 <div class="form-group">
 <div class="col-sm-4">
-Image 4<span style="color:red">*</span><input type="file" name="img4" required>
-</div>
+Görsel</div>
 <div class="col-sm-4">
-Image 5<input type="file" name="img5">
+Görsel 5<input type="file" name="img5">
 </div>
 
 </div>
@@ -256,7 +255,7 @@ Image 5<input type="file" name="img5">
 <div class="row">
 <div class="col-md-12">
 <div class="panel panel-default">
-<div class="panel-heading">Accessories</div>
+<div class="panel-heading">Aksesuarlar</div>
 <div class="panel-body">
 
 
@@ -264,22 +263,22 @@ Image 5<input type="file" name="img5">
 <div class="col-sm-3">
 <div class="checkbox checkbox-inline">
 <input type="checkbox" id="airconditioner" name="airconditioner" value="1">
-<label for="airconditioner"> Air Conditioner </label>
+<label for="airconditioner"> Klima </label>
 </div>
 </div>
 <div class="col-sm-3">
 <div class="checkbox checkbox-inline">
 <input type="checkbox" id="powerdoorlocks" name="powerdoorlocks" value="1">
-<label for="powerdoorlocks"> Power Door Locks </label>
+<label for="powerdoorlocks"> Elektrikli Kapı Kilitleri </label>
 </div></div>
 <div class="col-sm-3">
 <div class="checkbox checkbox-inline">
 <input type="checkbox" id="antilockbrakingsys" name="antilockbrakingsys" value="1">
-<label for="antilockbrakingsys"> AntiLock Braking System </label>
+<label for="antilockbrakingsys"> Fren Sistemi (ABS) </label>
 </div></div>
 <div class="checkbox checkbox-inline">
 <input type="checkbox" id="brakeassist" name="brakeassist" value="1">
-<label for="brakeassist"> Brake Assist </label>
+<label for="brakeassist"> Fren Asistanı </label>
 </div>
 </div>
 
@@ -290,23 +289,23 @@ Image 5<input type="file" name="img5">
 <div class="checkbox checkbox-inline">
 <input type="checkbox" id="powersteering" name="powersteering" value="1">
 <input type="checkbox" id="powersteering" name="powersteering" value="1">
-<label for="inlineCheckbox5"> Power Steering </label>
+<label for="inlineCheckbox5"> Hidrolik Direksiyon </label>
 </div>
 </div>
 <div class="col-sm-3">
 <div class="checkbox checkbox-inline">
 <input type="checkbox" id="driverairbag" name="driverairbag" value="1">
-<label for="driverairbag">Driver Airbag</label>
+<label for="driverairbag">Sürücü Hava YAstığı</label>
 </div>
 </div>
 <div class="col-sm-3">
 <div class="checkbox checkbox-inline">
 <input type="checkbox" id="passengerairbag" name="passengerairbag" value="1">
-<label for="passengerairbag"> Passenger Airbag </label>
+<label for="passengerairbag"> Yolcu Hava Yastığı </label>
 </div></div>
 <div class="checkbox checkbox-inline">
 <input type="checkbox" id="powerwindow" name="powerwindow" value="1">
-<label for="powerwindow"> Power Windows </label>
+<label for="powerwindow"> Elektrikli Camlar </label>
 </div>
 </div>
 
@@ -315,23 +314,23 @@ Image 5<input type="file" name="img5">
 <div class="col-sm-3">
 <div class="checkbox checkbox-inline">
 <input type="checkbox" id="cdplayer" name="cdplayer" value="1">
-<label for="cdplayer"> CD Player </label>
+<label for="cdplayer"> Bluetooth Ses Sistemi (Apple Car Play) </label>
 </div>
 </div>
 <div class="col-sm-3">
 <div class="checkbox h checkbox-inline">
 <input type="checkbox" id="centrallocking" name="centrallocking" value="1">
-<label for="centrallocking">Central Locking</label>
+<label for="centrallocking">Merkezi Kilitleme</label>
 </div></div>
 <div class="col-sm-3">
 <div class="checkbox checkbox-inline">
 <input type="checkbox" id="crashcensor" name="crashcensor" value="1">
-<label for="crashcensor"> Crash Sensor </label>
+<label for="crashcensor"> Çarpışma Sensörü </label>
 </div></div>
 <div class="col-sm-3">
 <div class="checkbox checkbox-inline">
 <input type="checkbox" id="leatherseats" name="leatherseats" value="1">
-<label for="leatherseats"> Leather Seats </label>
+<label for="leatherseats"> Deri Koltuklar </label>
 </div>
 </div>
 </div>
@@ -341,8 +340,8 @@ Image 5<input type="file" name="img5">
 
 											<div class="form-group">
 												<div class="col-sm-8 col-sm-offset-2">
-													<button class="btn btn-default" type="reset">Cancel</button>
-													<button class="btn btn-primary" name="submit" type="submit">Save changes</button>
+													<button class="btn btn-default" type="reset">İptal</button>
+													<button class="btn btn-primary" name="submit" type="submit">Değişiklikleri Kaydet</button>
 												</div>
 											</div>
 
