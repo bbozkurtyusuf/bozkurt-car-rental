@@ -37,7 +37,7 @@ $msg="Image updated successfully";
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Car Rental Portal | Admin Update Image 3</title>
+	<title>Araç Kiralama Portalı | Yönetici Görsel 3 Güncelleme</title>
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -87,12 +87,12 @@ $msg="Image updated successfully";
 				<div class="row">
 					<div class="col-md-12">
 					
-						<h2 class="page-title">Vehicle Image 3 </h2>
+						<h2 class="page-title">Araç Görseli 3 </h2>
 
 						<div class="row">
 							<div class="col-md-10">
 								<div class="panel panel-default">
-									<div class="panel-heading">Vehicle Image 3 Details</div>
+									<div class="panel-heading">Araç Görseli 3 Detayları</div>
 									<div class="panel-body">
 										<form method="post" class="form-horizontal" enctype="multipart/form-data">
 										
@@ -103,7 +103,7 @@ $msg="Image updated successfully";
 
 
 <div class="form-group">
-												<label class="col-sm-4 control-label">Current Image3</label>
+												<label class="col-sm-4 control-label">Mevcut Görsel 3</label>
 <?php 
 $id=intval($_GET['imgid']);
 $sql ="SELECT Vimage3 from tblvehicles where tblvehicles.id=:id";
@@ -124,7 +124,7 @@ foreach($results as $result)
 </div>
 
 											<div class="form-group">
-												<label class="col-sm-4 control-label">Upload New Image 3<span style="color:red">*</span></label>
+												<label class="col-sm-4 control-label">Yeni Görsel 3 Yükle<span style="color:red">*</span></label>
 												<div class="col-sm-8">
 											<input type="file" name="img3" required>
 												</div>
@@ -137,7 +137,7 @@ foreach($results as $result)
 											<div class="form-group">
 												<div class="col-sm-8 col-sm-offset-4">
 								
-													<button class="btn btn-primary" name="update" type="submit">Update</button>
+													<button class="btn btn-primary" name="update" type="submit">Güncelle</button>
 												</div>
 											</div>
 
