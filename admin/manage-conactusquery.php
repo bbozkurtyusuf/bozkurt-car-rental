@@ -35,7 +35,7 @@ $query -> execute();
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Car Rental Portal |Admin Manage Queries   </title>
+	<title>Araç Kiralama Portalı | Yönetici Sorgu Yönetimi   </title>
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -85,34 +85,34 @@ $query -> execute();
 				<div class="row">
 					<div class="col-md-12">
 
-						<h2 class="page-title">Manage Contact Us Queries</h2>
+						<h2 class="page-title">İletişim Sorgularını Yönet</h2>
 
 						<!-- Zero Configuration Table -->
 						<div class="panel panel-default">
-							<div class="panel-heading">User queries</div>
+							<div class="panel-heading">Kullanıcı Sorguları</div>
 							<div class="panel-body">
 					
 								<table id="zctb" class="display table table-striped table-bordered table-hover" cellspacing="0" width="100%">
 									<thead>
 										<tr>
 										<th>#</th>
-											<th>Name</th>
-											<th>Email</th>
-											<th>Contact No</th>
-											<th>Message</th>
-											<th>Posting date</th>
-											<th>Action</th>
+											<th>İsim</th>
+											<th>E-Mail Adresi</th>
+											<th>İletişim Numarası</th>
+											<th>Mesaj</th>
+											<th>Paylaşım Tarihi</th>
+											<th>İşlem</th>
 										</tr>
 									</thead>
 									<tfoot>
 										<tr>
 										<th>#</th>
-											<th>Name</th>
-											<th>Email</th>
-											<th>Contact No</th>
-											<th>Message</th>
-											<th>Posting date</th>
-											<th>Action</th>
+											<th>İsim</th>
+											<th>E-Mail Adresi</th>
+											<th>İletişim Numarası</th>
+											<th>Mesaj</th>
+											<th>Paylaşım Tarihi</th>
+											<th>İşlem</th>
 										</tr>
 										</tr>
 									</tfoot>
@@ -136,10 +136,10 @@ foreach($results as $result)
 											<td><?php echo htmlentities($result->PostingDate);?></td>
 																<?php if($result->status==1)
 {
-	?><td>Read</td>
+	?><td>Oku</td>
 <?php } else {?>
 
-<td><a href="manage-conactusquery.php?eid=<?php echo htmlentities($result->id);?>" onclick="return confirm('Do you really want to read')" >Pending</a>
+<td><a href="manage-conactusquery.php?eid=<?php echo htmlentities($result->id);?>" onclick="return confirm('Do you really want to read')" >Beklemede</a>
 </td>
 <?php } ?>
 										</tr>
