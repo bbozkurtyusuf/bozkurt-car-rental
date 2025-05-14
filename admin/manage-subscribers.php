@@ -32,7 +32,7 @@ $msg="Subscriber info deleted";
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Car Rental Portal |Admin Manage Subscribers   </title>
+	<title>Araç Kiralama Portalı | Yönetici Abone Yönetimi   </title>
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -82,11 +82,11 @@ $msg="Subscriber info deleted";
 				<div class="row">
 					<div class="col-md-12">
 
-						<h2 class="page-title">Manage Subscribers</h2>
+						<h2 class="page-title">Aboneleri Yönet</h2>
 
 						<!-- Zero Configuration Table -->
 						<div class="panel panel-default">
-							<div class="panel-heading">Subscribers Details</div>
+							<div class="panel-heading">Abone Detayları</div>
 							<div class="panel-body">
 							<?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
 				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
@@ -94,17 +94,17 @@ $msg="Subscriber info deleted";
 									<thead>
 										<tr>
 										<th>#</th>
-												<th>Email Id</th>
-											<th>Subscription Date</th>
-											<th>Action</th>
+												<th>E-Mail Adresi</th>
+											<th>Abonelik Tarihi</th>
+											<th>İşlem</th>
 										</tr>
 									</thead>
 									<tfoot>
 										<tr>
 										<th>#</th>
-										<th>Email Id</th>
-										<th>Subscription Date</th>
-											<th>Action</th>
+										<th>E-Mail Adresi</th>
+										<th>Abonelik Tarihi</th>
+											<th>İşlem</th>
 										</tr>
 									</tfoot>
 									<tbody>
