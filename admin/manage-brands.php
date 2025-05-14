@@ -33,7 +33,7 @@ $msg="Page data updated  successfully";
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Car Rental Portal |Admin Manage Brands   </title>
+	<title>Araç Kiralama Portalı | Yönetici Marka Yönetimi  </title>
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -83,11 +83,11 @@ $msg="Page data updated  successfully";
 				<div class="row">
 					<div class="col-md-12">
 
-						<h2 class="page-title">Manage Brands</h2>
+						<h2 class="page-title">Markaları Yönet</h2>
 
 						<!-- Zero Configuration Table -->
 						<div class="panel panel-default">
-							<div class="panel-heading">Listed  Brands</div>
+							<div class="panel-heading">Listelenen Markalar</div>
 							<div class="panel-body">
 							<?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
 				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
@@ -95,21 +95,21 @@ $msg="Page data updated  successfully";
 									<thead>
 										<tr>
 										<th>#</th>
-												<th>Brand Name</th>
-											<th>Creation Date</th>
-											<th>Updation date</th>
+												<th>Marka </th>
+											<th>Oluşturulma Tarihi</th>
+											<th>Güncelleme Tarihi</th>
 										
-											<th>Action</th>
+											<th>İşlem</th>
 										</tr>
 									</thead>
 									<tfoot>
 										<tr>
 										<th>#</th>
-											<th>Brand Name</th>
-											<th>Creation Date</th>
-											<th>Updation date</th>
+											<th>Marka Adı</th>
+											<th>Oluşturulma Tarihi</th>
+											<th>Güncelleme Tarihi</th>
 										
-											<th>Action</th>
+											<th>İşlem</th>
 										</tr>
 										</tr>
 									</tfoot>
