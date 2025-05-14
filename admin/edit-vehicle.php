@@ -73,7 +73,7 @@ $msg="Data updated successfully";
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Car Rental Portal | Admin Edit Vehicle Info</title>
+	<title>Araç Kiralama Portalı | Yönetici Araç Bilgisi Düzenle</title>
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -121,14 +121,14 @@ $msg="Data updated successfully";
 				<div class="row">
 					<div class="col-md-12">
 					
-						<h2 class="page-title">Edit Vehicle</h2>
+						<h2 class="page-title">Araç Düzenle</h2>
 
 						<div class="row">
 							<div class="col-md-12">
 								<div class="panel panel-default">
-									<div class="panel-heading">Basic Info</div>
+									<div class="panel-heading">Temel Bilgiler</div>
 									<div class="panel-body">
-<?php if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php } ?>
+<?php if($msg){?><div class="succWrap"><strong>BAŞARILI</strong>:<?php echo htmlentities($msg); ?> </div><?php } ?>
 <?php 
 $id=intval($_GET['id']);
 $sql ="SELECT tblvehicles.*,tblbrands.BrandName,tblbrands.id as bid from tblvehicles join tblbrands on tblbrands.id=tblvehicles.VehiclesBrand where tblvehicles.id=:id";
@@ -144,11 +144,11 @@ foreach($results as $result)
 
 <form method="post" class="form-horizontal" enctype="multipart/form-data">
 <div class="form-group">
-<label class="col-sm-2 control-label">Vehicle Title<span style="color:red">*</span></label>
+<label class="col-sm-2 control-label">Araç Başlığı<span style="color:red">*</span></label>
 <div class="col-sm-4">
 <input type="text" name="vehicletitle" class="form-control" value="<?php echo htmlentities($result->VehiclesTitle)?>" required>
 </div>
-<label class="col-sm-2 control-label">Select Brand<span style="color:red">*</span></label>
+<label class="col-sm-2 control-label">Marka Seçin<span style="color:red">*</span></label>
 <div class="col-sm-4">
 <select class="selectpicker" name="brandname" required>
 <option value="<?php echo htmlentities($result->bid);?>"><?php echo htmlentities($bdname=$result->BrandName); ?> </option>
@@ -175,36 +175,36 @@ continue;
 											
 <div class="hr-dashed"></div>
 <div class="form-group">
-<label class="col-sm-2 control-label">Vehical Overview<span style="color:red">*</span></label>
+<label class="col-sm-2 control-label">Araç Genel Bakış<span style="color:red">*</span></label>
 <div class="col-sm-10">
 <textarea class="form-control" name="vehicalorcview" rows="3" required><?php echo htmlentities($result->VehiclesOverview);?></textarea>
 </div>
 </div>
 
 <div class="form-group">
-<label class="col-sm-2 control-label">Price Per Day(in USD)<span style="color:red">*</span></label>
+<label class="col-sm-2 control-label">Günlük Fiyat (USD cinsinden)<span style="color:red">*</span></label>
 <div class="col-sm-4">
 <input type="text" name="priceperday" class="form-control" value="<?php echo htmlentities($result->PricePerDay);?>" required>
 </div>
-<label class="col-sm-2 control-label">Select Fuel Type<span style="color:red">*</span></label>
+<label class="col-sm-2 control-label">Yakıt Türü Seçin<span style="color:red">*</span></label>
 <div class="col-sm-4">
 <select class="selectpicker" name="fueltype" required>
 <option value="<?php echo htmlentities($result->FuelType);?>"> <?php echo htmlentities($result->FuelType);?> </option>
 
-<option value="Petrol">Petrol</option>
-<option value="Diesel">Diesel</option>
-<option value="CNG">CNG</option>
+<option value="Petrol">Benzin</option>
+<option value="Diesel">Dizel</option>
+<option value="CNG">Tüp</option>
 </select>
 </div>
 </div>
 
 
 <div class="form-group">
-<label class="col-sm-2 control-label">Model Year<span style="color:red">*</span></label>
+<label class="col-sm-2 control-label">Model Yılı<span style="color:red">*</span></label>
 <div class="col-sm-4">
 <input type="text" name="modelyear" class="form-control" value="<?php echo htmlentities($result->ModelYear);?>" required>
 </div>
-<label class="col-sm-2 control-label">Seating Capacity<span style="color:red">*</span></label>
+<label class="col-sm-2 control-label">Koltuk Sayısı<span style="color:red">*</span></label>
 <div class="col-sm-4">
 <input type="text" name="seatingcapacity" class="form-control" value="<?php echo htmlentities($result->SeatingCapacity);?>" required>
 </div>
@@ -212,40 +212,40 @@ continue;
 <div class="hr-dashed"></div>								
 <div class="form-group">
 <div class="col-sm-12">
-<h4><b>Vehicle Images</b></h4>
+<h4><b>Araç Görseli</b></h4>
 </div>
 </div>
 
 
 <div class="form-group">
 <div class="col-sm-4">
-Image 1 <img src="img/vehicleimages/<?php echo htmlentities($result->Vimage1);?>" width="300" height="200" style="border:solid 1px #000">
-<a href="changeimage1.php?imgid=<?php echo htmlentities($result->id)?>">Change Image 1</a>
+Görsel 1 <img src="img/vehicleimages/<?php echo htmlentities($result->Vimage1);?>" width="300" height="200" style="border:solid 1px #000">
+<a href="changeimage1.php?imgid=<?php echo htmlentities($result->id)?>">Görseli Değiştir 1</a>
 </div>
 <div class="col-sm-4">
-Image 2<img src="img/vehicleimages/<?php echo htmlentities($result->Vimage2);?>" width="300" height="200" style="border:solid 1px #000">
-<a href="changeimage2.php?imgid=<?php echo htmlentities($result->id)?>">Change Image 2</a>
+Görsel 2<img src="img/vehicleimages/<?php echo htmlentities($result->Vimage2);?>" width="300" height="200" style="border:solid 1px #000">
+<a href="changeimage2.php?imgid=<?php echo htmlentities($result->id)?>">Görseli Değiştir 2</a>
 </div>
 <div class="col-sm-4">
-Image 3<img src="img/vehicleimages/<?php echo htmlentities($result->Vimage3);?>" width="300" height="200" style="border:solid 1px #000">
-<a href="changeimage3.php?imgid=<?php echo htmlentities($result->id)?>">Change Image 3</a>
+Görsel 3<img src="img/vehicleimages/<?php echo htmlentities($result->Vimage3);?>" width="300" height="200" style="border:solid 1px #000">
+<a href="changeimage3.php?imgid=<?php echo htmlentities($result->id)?>">Görseli Değiştir 3</a>
 </div>
 </div>
 
 
 <div class="form-group">
 <div class="col-sm-4">
-Image 4<img src="img/vehicleimages/<?php echo htmlentities($result->Vimage4);?>" width="300" height="200" style="border:solid 1px #000">
-<a href="changeimage4.php?imgid=<?php echo htmlentities($result->id)?>">Change Image 4</a>
+Görsel 4<img src="img/vehicleimages/<?php echo htmlentities($result->Vimage4);?>" width="300" height="200" style="border:solid 1px #000">
+<a href="changeimage4.php?imgid=<?php echo htmlentities($result->id)?>">Görseli Değiştir 4</a>
 </div>
 <div class="col-sm-4">
-Image 5
+Görsel 5
 <?php if($result->Vimage5=="")
 {
 echo htmlentities("File not available");
 } else {?>
 <img src="img/vehicleimages/<?php echo htmlentities($result->Vimage5);?>" width="300" height="200" style="border:solid 1px #000">
-<a href="changeimage5.php?imgid=<?php echo htmlentities($result->id)?>">Change Image 5</a>
+<a href="changeimage5.php?imgid=<?php echo htmlentities($result->id)?>">Görseli Değiştir 5</a>
 <?php } ?>
 </div>
 
@@ -261,7 +261,7 @@ echo htmlentities("File not available");
 <div class="row">
 <div class="col-md-12">
 <div class="panel panel-default">
-<div class="panel-heading">Accessories</div>
+<div class="panel-heading">Aksesuarlar</div>
 <div class="panel-body">
 
 
@@ -271,12 +271,12 @@ echo htmlentities("File not available");
 {?>
 <div class="checkbox checkbox-inline">
 <input type="checkbox" id="inlineCheckbox1" name="airconditioner" checked value="1">
-<label for="inlineCheckbox1"> Air Conditioner </label>
+<label for="inlineCheckbox1"> Klima </label>
 </div>
 <?php } else { ?>
 <div class="checkbox checkbox-inline">
 <input type="checkbox" id="inlineCheckbox1" name="airconditioner" value="1">
-<label for="inlineCheckbox1"> Air Conditioner </label>
+<label for="inlineCheckbox1"> Klima </label>
 </div>
 <?php } ?>
 </div>
@@ -285,12 +285,12 @@ echo htmlentities("File not available");
 {?>
 <div class="checkbox checkbox-inline">
 <input type="checkbox" id="inlineCheckbox1" name="powerdoorlocks" checked value="1">
-<label for="inlineCheckbox2"> Power Door Locks </label>
+<label for="inlineCheckbox2"> Elektrikli Kapı Kilitleri </label>
 </div>
 <?php } else {?>
 <div class="checkbox checkbox-success checkbox-inline">
 <input type="checkbox" id="inlineCheckbox1" name="powerdoorlocks" value="1">
-<label for="inlineCheckbox2"> Power Door Locks </label>
+<label for="inlineCheckbox2"> Elektrikli Kapı Kilitleri </label>
 </div>
 <?php }?>
 </div>
@@ -299,12 +299,12 @@ echo htmlentities("File not available");
 {?>
 <div class="checkbox checkbox-inline">
 <input type="checkbox" id="inlineCheckbox1" name="antilockbrakingsys" checked value="1">
-<label for="inlineCheckbox3"> AntiLock Braking System </label>
+<label for="inlineCheckbox3"> Fren Sistemi (ABS) </label>
 </div>
 <?php } else {?>
 <div class="checkbox checkbox-inline">
 <input type="checkbox" id="inlineCheckbox1" name="antilockbrakingsys" value="1">
-<label for="inlineCheckbox3"> AntiLock Braking System </label>
+<label for="inlineCheckbox3">  Fren Sistemi (ABS) </label>
 </div>
 <?php } ?>
 </div>
@@ -314,12 +314,12 @@ echo htmlentities("File not available");
 	?>
 <div class="checkbox checkbox-inline">
 <input type="checkbox" id="inlineCheckbox1" name="brakeassist" checked value="1">
-<label for="inlineCheckbox3"> Brake Assist </label>
+<label for="inlineCheckbox3"> Fren Yardım Sistemi </label>
 </div>
 <?php } else {?>
 <div class="checkbox checkbox-inline">
 <input type="checkbox" id="inlineCheckbox1" name="brakeassist" value="1">
-<label  for="inlineCheckbox3"> Brake Assist </label>
+<label  for="inlineCheckbox3"> Fren Yardım Sistemi </label>
 </div>
 <?php } ?>
 </div>
@@ -331,13 +331,13 @@ echo htmlentities("File not available");
 <div class="col-sm-3">
 <div class="checkbox checkbox-inline">
 <input type="checkbox" id="inlineCheckbox1" name="powersteering" checked value="1">
-<label for="inlineCheckbox1"> Power Steering </label>
+<label for="inlineCheckbox1"> Elektrikli Direksiyon </label>
 </div>
 <?php } else {?>
 <div class="col-sm-3">
 <div class="checkbox checkbox-inline">
 <input type="checkbox" id="inlineCheckbox1" name="powersteering" value="1">
-<label for="inlineCheckbox1"> Power Steering </label>
+<label for="inlineCheckbox1"> Elektrikli Direksiyon</label>
 </div>
 <?php } ?>
 </div>
@@ -347,12 +347,12 @@ echo htmlentities("File not available");
 ?>
 <div class="checkbox checkbox-inline">
 <input type="checkbox" id="inlineCheckbox1" name="driverairbag" checked value="1">
-<label for="inlineCheckbox2">Driver Airbag</label>
+<label for="inlineCheckbox2">Sürücü Hava Yastığı</label>
 </div>
 <?php } else { ?>
 <div class="checkbox checkbox-inline">
 <input type="checkbox" id="inlineCheckbox1" name="driverairbag" value="1">
-<label for="inlineCheckbox2">Driver Airbag</label>
+<label for="inlineCheckbox2">Sürücü Hava Yastığı</label>
 <?php } ?>
 </div>
 <div class="col-sm-3">
@@ -361,12 +361,12 @@ echo htmlentities("File not available");
 ?>
 <div class="checkbox checkbox-inline">
 <input type="checkbox" id="inlineCheckbox1" name="passengerairbag" checked value="1">
-<label for="inlineCheckbox3"> Passenger Airbag </label>
+<label for="inlineCheckbox3"> Yolcu Hava Yastığı </label>
 </div>
 <?php } else { ?>
 <div class="checkbox checkbox-inline">
 <input type="checkbox" id="inlineCheckbox1" name="passengerairbag" value="1">
-<label for="inlineCheckbox3"> Passenger Airbag </label>
+<label for="inlineCheckbox3"> Yolcu Hava Yastığı </label>
 </div>
 <?php } ?>
 </div>
@@ -376,12 +376,12 @@ echo htmlentities("File not available");
 ?>
 <div class="checkbox checkbox-inline">
 <input type="checkbox" id="inlineCheckbox1" name="powerwindow" checked value="1">
-<label for="inlineCheckbox3"> Power Windows </label>
+<label for="inlineCheckbox3"> Elektrikli Camlar </label>
 </div>
 <?php } else { ?>
 <div class="checkbox checkbox-inline">
 <input type="checkbox" id="inlineCheckbox1" name="powerwindow" value="1">
-<label for="inlineCheckbox3"> Power Windows </label>
+<label for="inlineCheckbox3">Elektrikli Camlar </label>
 </div>
 <?php } ?>
 </div>
@@ -394,12 +394,12 @@ echo htmlentities("File not available");
 ?>
 <div class="checkbox checkbox-inline">
 <input type="checkbox" id="inlineCheckbox1" name="cdplayer" checked value="1">
-<label for="inlineCheckbox1"> CD Player </label>
+<label for="inlineCheckbox1"> Bluetooth Sistemi (Apple Car Play) </label>
 </div>
 <?php } else {?>
 <div class="checkbox checkbox-inline">
 <input type="checkbox" id="inlineCheckbox1" name="cdplayer" value="1">
-<label for="inlineCheckbox1"> CD Player </label>
+<label for="inlineCheckbox1"> Bluetooth Sistemi (Apple Car Play) </label>
 </div>
 <?php } ?>
 </div>
@@ -409,12 +409,12 @@ echo htmlentities("File not available");
 ?>
 <div class="checkbox  checkbox-inline">
 <input type="checkbox" id="inlineCheckbox1" name="centrallocking" checked value="1">
-<label for="inlineCheckbox2">Central Locking</label>
+<label for="inlineCheckbox2">Merkezi Kilitleme</label>
 </div>
 <?php } else { ?>
 <div class="checkbox checkbox-success checkbox-inline">
 <input type="checkbox" id="inlineCheckbox1" name="centrallocking" value="1">
-<label for="inlineCheckbox2">Central Locking</label>
+<label for="inlineCheckbox2">Merkezi Kilitleme</label>
 </div>
 <?php } ?>
 </div>
@@ -424,12 +424,12 @@ echo htmlentities("File not available");
 ?>
 <div class="checkbox checkbox-inline">
 <input type="checkbox" id="inlineCheckbox1" name="crashcensor" checked value="1">
-<label for="inlineCheckbox3"> Crash Sensor </label>
+<label for="inlineCheckbox3">Çarpışma Önleyici Sensör </label>
 </div>
 <?php } else {?>
 <div class="checkbox checkbox-inline">
 <input type="checkbox" id="inlineCheckbox1" name="crashcensor" value="1">
-<label for="inlineCheckbox3"> Crash Sensor </label>
+<label for="inlineCheckbox3">Çarpışma Önleyici Sensör </label>
 </div>
 <?php } ?>
 </div>
@@ -439,12 +439,12 @@ echo htmlentities("File not available");
 ?>
 <div class="checkbox checkbox-inline">
 <input type="checkbox" id="inlineCheckbox1" name="leatherseats" checked value="1">
-<label for="inlineCheckbox3"> Leather Seats </label>
+<label for="inlineCheckbox3"> Deri Koltuklar </label>
 </div>
 <?php } else { ?>
 <div class="checkbox checkbox-inline">
 <input type="checkbox" id="inlineCheckbox1" name="leatherseats" value="1">
-<label for="inlineCheckbox3"> Leather Seats </label>
+<label for="inlineCheckbox3"> Deri Koltuklar </label>
 </div>
 <?php } ?>
 </div>
@@ -456,7 +456,7 @@ echo htmlentities("File not available");
 											<div class="form-group">
 												<div class="col-sm-8 col-sm-offset-2" >
 													
-<button class="btn btn-primary" name="submit" type="submit" style="margin-top:4%">Save changes</button>
+<button class="btn btn-primary" name="submit" type="submit" style="margin-top:4%">Değişiklikleri Kaydet</button>
 												</div>
 											</div>
 
