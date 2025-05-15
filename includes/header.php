@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-3 col-md-2">
-          <div class="logo"> <a href="index.php"><img style="weight: 153px;" src="assets/images/logo.png" alt="image" /></a> </div>
+          <div class="logo"> <a href="index.php"><img style="weight: 153px;" src="./assets/images/logo10.png" alt="image" /></a> </div>
         </div>
         <div class="col-sm-9 col-md-10">
           <div class="header_info">
@@ -29,7 +29,7 @@
             </div>
             <div class="header_widgets">
               <div class="circle_icon"> <i class="fa fa-phone" aria-hidden="true"></i> </div>
-              <p class="uppercase_text">Destek Bizi Arayın: </p>
+              <p class="uppercase_text">Destek İçin Bizi Arayın: </p>
               <a href="tel:<?php echo htmlentities($contactno); ?>"><?php echo htmlentities($contactno); ?></a>
             </div>
             <div class="social-follow">
@@ -41,7 +41,7 @@
                   data-dismiss="modal">Giriş Yap / Kayıt Ol</a> </div>
             <?php } else {
 
-              echo "Welcome To Car rental portal";
+              echo "Bozkurt Otomotive Hoş Geldiniz";
             } ?>
           </div>
         </div>
@@ -92,7 +92,7 @@
         <div class="header_search">
           <div id="search_toggle"><i class="fa fa-search" aria-hidden="true"></i></div>
           <form action="search.php" method="post" id="header-search-form">
-            <input type="text" placeholder="Search..." name="searchdata" class="form-control" required="true">
+            <input type="text" placeholder="Ara..." name="searchdata" class="form-control" required="true">
             <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
           </form>
         </div>

@@ -46,7 +46,7 @@ error_reporting(0);
 <!-- /Header --> 
 
 <!-- Banners -->
-<section id="banner" class="banner-section">
+<section id="banner" class="banner-section" style="height: 600px;">
   <div class="container">
     <div class="div_zindex">
       <div class="row">
@@ -67,7 +67,7 @@ error_reporting(0);
 <section class="section-padding gray-bg">
   <div class="container">
     <div class="section-header text-center">
-      <h2>En iyisini bul <span>Senin İçin</span></h2>
+      <h2>Hayalinizdeki Yolculuk Başlıyor <span></span></h2>
       <p>"En kaliteli araçlarla, ihtiyacınıza uygun kiralama seçenekleriyle hizmetinizdeyiz. Geniş araç filomuz, her bütçeye ve ihtiyaca uygun seçenekler sunar. Sizin için en uygun aracı bulmak çok kolay! Güvenli, konforlu ve ekonomik araçlarımıza hemen göz atın ve yolculuğunuzun keyfini çıkarın."</p>
     </div>
     <div class="row"> 
@@ -167,7 +167,7 @@ foreach($results as $result)
 <section class="section-padding testimonial-section parallex-bg">
   <div class="container div_zindex">
     <div class="section-header white-text text-center">
-      <h2>Memnun Müşterilerimiz<span>Müşterilerimiz</span></h2>
+      <h2> Müşteri Memnuniyetimiz<span></span></h2>
     </div>
     <div class="row">
       <div id="testimonial-slider">
